@@ -1,4 +1,4 @@
-/*=============== FILTERS TABS ===============
+
 const tabs=document.querySelectorAll('[data-target]'),
        tabContents= document.querySelectorAll('[data-content]')
 
@@ -17,21 +17,6 @@ tabs.forEach(tab =>{
         tab.classList.add('filter-tab-active')
     })
 })
-
-
-*/
-
-var btn = document.querySelector('[data-target]');
-var container = document.querySelector('[data-content]')
-
-btn.addEventListener('click', function () {
-    if (container.style.display == 'block') {
-        container.style.display = 'none';
-    } else {
-        container.style.display = 'block';
-    }
-});
-
 
 
 /*=============== DARK LIGHT THEME ===============*/
