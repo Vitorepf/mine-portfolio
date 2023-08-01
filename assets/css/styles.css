@@ -472,7 +472,7 @@ body.dark-theme {
   padding: 1rem;
   border: 1.60px solid #eaeaea;
   border-radius: 0px 20px 20px 20px;
-  background-color: var(--body-color);;
+  background-color: var(--body-color);
   cursor: pointer;
   transition: all 0.4s;
   margin-bottom: 1rem;
