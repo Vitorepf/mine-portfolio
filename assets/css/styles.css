@@ -457,6 +457,7 @@ body.dark-theme {
 }
 
 .col .jornada__title{
+  text-align: center;
   font-family: var(--body-font);
   color: var(--first-color);
   padding: 0px 0px 20px 30px;
@@ -471,7 +472,7 @@ body.dark-theme {
   position:relative;
   padding: 1rem;
   border: 1.60px solid #eaeaea;
-  border-radius: 0px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   background-color: var(--body-color);
   cursor: pointer;
   transition: all 0.4s;
@@ -510,7 +511,7 @@ body.dark-theme {
 
 .jornada__box p {
   line-height: 2;
-  color: var(--body-font);
+  color: var(--title-color);
   font-size: 17px;
   overflow-wrap: break-word; /* This property ensures the text wraps to the next line */
   word-break: break-word; /* Handles long words that cannot be broken otherwise */
