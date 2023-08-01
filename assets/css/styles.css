@@ -444,6 +444,78 @@ body.dark-theme {
   background-color: var(--body-color);
 }
 
+/*=============== Jornada ===============*/
+
+.jornada__content {
+  row-gap: 3.5rem;
+}
+
+.jornada__area{
+  display: grid;
+  align-content: flex-start;
+  grid-column-gap: 20px;
+}
+
+.col .jornada__title{
+  font-family: var(--body-font);
+  color: var(--first-color);
+  padding: 0px 0px 20px 30px;
+}
+
+.col .jornada__contents{
+  padding: 0px 30px;
+  border-left: 2px solid #bababa;
+}
+
+.col .jornada__contents .jornada__box{
+  position:relative;
+  padding: 1rem;
+  border: 1.60px solid #eaeaea;
+  border-radius: 0px 20px 20px 20px;
+  background-color: var(--body-color);;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 1rem;
+}
+
+
+.col .jornada__contents .jornada__box:hover{
+  box-shadow: 0px 3px 12px 0px #ccc;
+  border: 1px solid transparent;
+}
+
+.col .jornada__contents .jornada__box::before{
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: var(--first-color);
+  border: 2px solid white;
+
+}
+.jornada__box h4{
+  position: relative;
+  color: #6491e4;
+}
+
+.jornada__box h3{
+  font-size: 19px;
+  padding: 10px 0px 6px;
+  font-family: var(--body-font);
+  color: var(--title-color);
+}
+
+.jornada__box p {
+  line-height: 2;
+  color: var(--body-font);
+  font-size: 17px;
+  overflow-wrap: break-word; /* This property ensures the text wraps to the next line */
+  word-break: break-word; /* Handles long words that cannot be broken otherwise */
+}
+
 /*=============== FOOTER ===============*/
 
 .footer__copy {
@@ -472,6 +544,21 @@ body.dark-theme {
 }
 
 /*=============== BREAKPOINTS ===============*/
+/* For small devices (up to 641px) */
+@media screen and (max-width: 641px) {
+  .jornada__area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .jornada__contents {
+    flex: 0 0 100%;
+    max-width: 320px;
+  }
+}
+
+
 /* For small devices */
 @media screen and (max-width: 320px) {
   .container {
@@ -503,8 +590,27 @@ body.dark-theme {
   }
 
   .filters__content {
-    width: 332px;
+    width: 400px;
     margin: 3rem auto;
+  }
+}
+
+@media screen and (min-width: 398px) and (max-width: 575px) {
+
+ 
+
+}
+
+  /* For small devices (up to 440px) */
+@media screen and (max-width: 440px) {
+  .profile__info {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    justify-content: center;
+  }
+  
+  .profile__info-group {
+    text-align: center;
   }
 }
 
